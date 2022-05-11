@@ -35,14 +35,15 @@
     "require" : {
         "php" : ">=8.0",
         "mcustiel/phiremock-client": "^1.0",
-        "codeception/codeception" : ">=2.2 <5.0",
-        "codeception/lib-asserts": "^1.1"
+        "codeception/codeception" : "5.0.x-dev",
+        "codeception/lib-asserts": "^2.0.0"
     },
     "require-dev" : {
-        "mcustiel/phiremock-codeception-extension": "^2.0",
+        "darkmatus/phiremock-codeception-extension": "^3.0",
         "mcustiel/phiremock-server": "^1.0",
-        "codeception/module-asserts": "^1.1",
+        "codeception/module-asserts": "^3",
         "guzzlehttp/guzzle" : "^7.0"
     },
-    "prefer-stable": true
+    "prefer-stable": true,
+    "minimum-stability": "dev"
 }

@@ -36,22 +36,22 @@ use Psr\Http\Client\ClientExceptionInterface;
 class Phiremock extends CodeceptionModule
 {
     /** @var array */
-    protected $config = Config::DEFAULT_CONFIG;
+    protected array $config = Config::DEFAULT_CONFIG;
 
     /** @var \Mcustiel\Phiremock\Client\Phiremock */
-    private $phiremock;
+    private \Mcustiel\Phiremock\Client\Phiremock $phiremock;
 
     /** @var ExpectationAnnotationParser */
-    private $expectationsParser;
+    private ExpectationAnnotationParser $expectationsParser;
 
     /** @var Config */
-    private $moduleConfig;
+    private Config $moduleConfig;
 
     /** @var Phiremock[] */
-    private $extraConnections = [];
+    private array $extraConnections = [];
 
     /** @var bool */
-    private $isExtraConfig;
+    private bool $isExtraConfig;
 
     /** @throws ModuleException */
     public function __construct(ModuleContainer $moduleContainer, $config = null, bool $isExtra = false)
